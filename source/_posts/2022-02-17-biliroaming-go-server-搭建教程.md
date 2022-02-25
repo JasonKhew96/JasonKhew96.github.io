@@ -24,9 +24,19 @@ tags:
 
 先下载 [biliroaming-go-server-docker](https://github.com/JasonKhew96/biliroaming-go-server-docker/archive/refs/heads/master.zip) 并解压
 
+{% asset_img "config.png" "设置文件夹" %}
+
 复制 `config/config.example.yaml` 到 `config/config.yml`，然后修改配置 `config/config.yml`
 
+{% asset_img "config_port.png" "设置端口" %}
+
+{% asset_img "config_docker_port.png" "docker 设置端口" %}
+
 这里的 `端口` 必须与 `docker-compose-http.yml` 的 `映射端口` 一致
+
+{% asset_img "config_docker_external.png" "docker 设置域名" %}
+
+{% asset_img "config_proxy_external.png" "docker 设置域名" %}
 
 如果代理运行在容器外面，可以在 `docker-compose-http.yml` 里使用 `extra_hosts` 的规则，然后 `config/config.yml` 里的代理设置为 `socks5://host.docker.internal:端口`
 
