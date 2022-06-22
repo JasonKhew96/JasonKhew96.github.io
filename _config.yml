@@ -103,6 +103,3 @@ theme: next
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ""
-
-# google adsense
-adsense: ca-pub-2550705817763949
